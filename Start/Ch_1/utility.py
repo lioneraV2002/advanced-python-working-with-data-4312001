@@ -7,6 +7,7 @@ values = [0, 1, 2, 3, 4, 5]
 # TODO: any() can be used to see if any value in a sequence is True
 print(any(values))
 
+
 # TODO: all() will detect if all of the values in a sequence are True
 print(all(values))
 
