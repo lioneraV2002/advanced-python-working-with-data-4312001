@@ -1,7 +1,6 @@
-# Demonstrate the usage of namdtuple objects
+# Demonstrate the usage of namedtuple objects
 
 import collections
-
 
 # create a Point namedtuple
 Point = collections.namedtuple("Point", "x y")
