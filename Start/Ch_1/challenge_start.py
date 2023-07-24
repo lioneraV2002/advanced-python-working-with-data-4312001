@@ -47,7 +47,10 @@ def getsig(q):
 
 sigevents = sorted(data["features"], key=getsig, reverse=True)
 print("the 10 most significant events were:")
-for i in range(0,10):
+for i in range(0, 10):
     print(
         f"Event: {sigevents[i]['properties']['title']}, Significance: {sigevents[i]['properties']['sig']}"
     )
+
+
+
