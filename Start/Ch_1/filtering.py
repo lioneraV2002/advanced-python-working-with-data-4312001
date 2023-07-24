@@ -37,7 +37,6 @@ with open("../../30DayQuakes.json", "r") as datafile:
     data = json.load(datafile)
 
 
-
 # want to keep "not a quakes" to see
 def notAQuake(q):
     if q["properties"]["type"] == "earthquake":
@@ -45,7 +44,7 @@ def notAQuake(q):
     return True
 
 
-events = list(filter(notAQuake,data["features"]))
+events = list(filter(notAQuake, data["features"]))
 print(f"total of non-quake events: {len(events)}")
-for i in range (0,10):
+for i in range(0, 10):
     print(events[i]["properties"]["type"])
