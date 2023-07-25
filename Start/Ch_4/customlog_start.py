@@ -25,3 +25,4 @@ logging.basicConfig(filename="output.log",
 logging.info("This is an info-level log message",extra=extData)
 logging.warning("This is a warning-level message",extra=extData)
 anotherFunction()
+
