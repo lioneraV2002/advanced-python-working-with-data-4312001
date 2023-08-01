@@ -5,6 +5,8 @@ import json
 import datetime
 
 # read in the contents of the JSON file
+import time
+
 with open("../../30DayQuakes.json", "r") as datafile:
     data = json.load(datafile)
 
@@ -21,7 +23,7 @@ def simplequake(q):
         "place": q['properties']["place"],
         "mag": q["properties"]["mag"],
         "link": q["properties"]["url"],
-        "date": str(datetime.date.fromtimestamp(q["properties"]["time"] / 1000))
+        "date": (datetime.date.fromtimestamp(q["properties"]["time"] / 1000)).strftime("%Y/%m/%d")
 
     }
 
